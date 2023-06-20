@@ -1,0 +1,48 @@
+.navigation {
+  background-color: rgb(21, 21, 21);
+  height: 70px;
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto 30px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 15% 70% 15%;
+
+  h1 {
+    color: $color-5;
+  }
+
+  li {
+    i {
+      color: $color-3;
+      transition: 0.3s;
+      &:hover {
+        color: $white;
+        cursor: pointer;
+      }
+    }
+    font-family: $font-2;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    &:hover {
+      color: $white;
+    }
+  }
+
+  .nav {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .icons-nav {
+    display: flex;
+    gap: 40px;
+    justify-content: end;
+  }
+
+  .nav-active {
+    color: $white;
+  }
+}
